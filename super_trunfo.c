@@ -21,9 +21,8 @@ int main(){
     //Digitar od dados da Carta de Super Trunfo
     printf("Digite o estado: ");
     scanf(" %c", &estado1);
+    setbuf(stdin, NULL); //limpar o buffer de entrada
 
-    //Limpar o buffer
-    while ((getchar()) != '\n'); 
 
     printf("Digite o codigo: ");
     fgets(codigo1, sizeof(codigo1), stdin);
@@ -45,12 +44,25 @@ int main(){
     printf("Digite o numero de pontos turisticos: \n");
     scanf("%i", &pontosturisticos1);
 
+    //Exibir os dados digitados da primeira carta de Super Trunfo
+    printf("Estado: %c\n", estado1);
+
+    printf("Codigo: %s\n", codigo1);
+
+    printf("Nome da Cidade: %s\n", cidade1);
+
+    printf("Populacao: %i\n", populacao1);
+
+    printf("Area: %.2f\n", area1); //formatação com 2 casas decimais
+
+    printf("PIB: %.2f\n", pib1); //formatação com 2 casas decimais
+
+    printf("Pontos Turisticos: %i\n", pontosturisticos1);
+
     //Digitar os dados da segunda Carta de Super Trunfo
     printf("Digite o estado: ");
     scanf(" %c", &estado2);
-
-    //Limpar o buffer
-    while ((getchar()) != '\n'); 
+    setbuf(stdin, NULL); //limpar o buffer de entrada
 
     printf("Digite o codigo: ");
     fgets(codigo2, sizeof(codigo2), stdin);
@@ -73,21 +85,6 @@ int main(){
     scanf("%i", &pontosturisticos2);
 
     //Exibir os dados digitados da primeira carta de Super Trunfo
-    printf("Estado: %c\n", estado1);
-
-    printf("Codigo: %s\n", codigo1);
-
-    printf("Nome da Cidade: %s\n", cidade1);
-
-    printf("Populacao: %i\n", populacao1);
-
-    printf("Area: %.2f\n", area1); //formatação com 2 casas decimais
-
-    printf("PIB: %.2f\n", pib1); //formatação com 2 casas decimais
-
-    printf("Pontos Turisticos: %i\n", pontosturisticos1);
-
-    //Exibir os dados digitados da segunda carta de Super Trunfo
     printf("Estado: %c\n", estado2);
 
     printf("Codigo: %s\n", codigo2);
@@ -106,3 +103,4 @@ int main(){
 return 0;
 
 }
+
