@@ -4,21 +4,21 @@
 
 int main(){
     
-    //Dados para a primeira carta
+    //Dados de entrada para a primeira carta
     char estado1;
     char codigo1[50];
     char cidade1[50];
     int populacao1, pontosturisticos1;
     float area1, pib1;
 
-    //Dados para a segunda carta
+    //Dados de entrada para a segunda carta
     char estado2;
     char codigo2[50];
     char cidade2[50];
     int populacao2, pontosturisticos2;
     float area2, pib2;
 
-    //Digitar od dados da Carta de Super Trunfo
+    //Inserir os dados da primeira Carta de Super Trunfo
     printf("Digite o estado: ");
     scanf(" %c", &estado1);
     setbuf(stdin, NULL); //limpar o buffer de entrada
@@ -59,7 +59,7 @@ int main(){
 
     printf("Pontos Turisticos: %i\n", pontosturisticos1);
 
-    //Digitar os dados da segunda Carta de Super Trunfo
+    //Inserir os dados da segunda Carta de Super Trunfo
     printf("Digite o estado: ");
     scanf(" %c", &estado2);
     setbuf(stdin, NULL); //limpar o buffer de entrada
@@ -84,7 +84,7 @@ int main(){
     printf("Digite o numero de pontos turisticos: \n");
     scanf("%i", &pontosturisticos2);
 
-    //Exibir os dados digitados da primeira carta de Super Trunfo
+    //Exibir os dados digitados da segunda carta de Super Trunfo
     printf("Estado: %c\n", estado2);
 
     printf("Codigo: %s\n", codigo2);
